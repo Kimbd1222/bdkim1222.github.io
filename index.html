@@ -3,6 +3,9 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>Sungsoo Kim | Academic Homepage</title>
 
 <style>
@@ -18,11 +21,21 @@ body.light {
   --text: #0f766e;
   --sub: #334155;
   --border: #e5e7eb;
+:root{
+--bg:#0b0b0b;
+--text:#6366f1;
+--sub:#94a3b8;
+--border:#1f2933;
 }
 
 * {
   box-sizing: border-box;
   font-family: Charter, Georgia, serif;
+body.light{
+--bg:#ffffff;
+--text:#4f46e5;
+--sub:#334155;
+--border:#e5e7eb;
 }
 
 body {
@@ -30,34 +43,58 @@ body {
   background: var(--bg);
   color: var(--text);
   line-height: 1.7;
+*{
+box-sizing:border-box;
+font-family: Charter, Georgia, serif;
 }
 
 section {
   max-width: 900px;
   margin: auto;
   padding: 60px 20px;
+body{
+margin:0;
+background:var(--bg);
+color:var(--text);
+line-height:1.7;
 }
 
 h1 {
   font-size: 40px;
+section{
+max-width:900px;
+margin:auto;
+padding:60px 20px;
 }
 
 h2 {
   border-bottom: 1px solid var(--border);
   padding-bottom: 6px;
+h1{
+font-size:42px;
+margin-bottom:5px;
 }
 
 h3 {
   margin-top: 20px;
+h2{
+border-bottom:1px solid var(--border);
+padding-bottom:6px;
+margin-top:40px;
 }
 
 p, li {
   color: var(--sub);
   font-size: 15px;
+h3{
+margin-top:20px;
 }
 
 ul {
   padding-left: 18px;
+p,li{
+color:var(--sub);
+font-size:15px;
 }
 
 .card {
@@ -65,6 +102,8 @@ ul {
   border-radius: 10px;
   padding: 18px;
   margin-top: 15px;
+ul{
+padding-left:18px;
 }
 
 .toggle {
@@ -77,6 +116,11 @@ ul {
   padding: 6px 14px;
   border-radius: 20px;
   cursor: pointer;
+.card{
+border:1px solid var(--border);
+border-radius:10px;
+padding:18px;
+margin-top:15px;
 }
 
 .cv-btn {
@@ -87,11 +131,29 @@ ul {
   border-radius: 20px;
   color: var(--text);
   text-decoration: none;
+.toggle{
+position:fixed;
+top:20px;
+right:20px;
+border:1px solid var(--text);
+background:transparent;
+color:var(--text);
+padding:6px 14px;
+border-radius:20px;
+cursor:pointer;
 }
 
 .cv-btn:hover {
   background: var(--text);
   color: var(--bg);
+.cv-btn{
+display:inline-block;
+margin-top:15px;
+padding:8px 18px;
+border:1px solid var(--text);
+border-radius:20px;
+color:var(--text);
+text-decoration:none;
 }
 
 footer {
@@ -99,21 +161,39 @@ footer {
   padding: 40px;
   font-size: 14px;
   color: var(--sub);
+.cv-btn:hover{
+background:var(--text);
+color:var(--bg);
 }
 
 section a {
   color: inherit;
   text-decoration: none;
+section a{
+color:inherit;
+text-decoration:none;
 }
 
 section a:hover {
   text-decoration: underline; /* hover 시만 표시 (선택) */
+section a:hover{
+text-decoration:underline;
 }
 
 </style>
 
+.pub{
+margin-top:18px;
+}
 
+footer{
+text-align:center;
+padding:40px;
+font-size:14px;
+color:var(--sub);
+}
 
+</style>
 
 </head>
 
@@ -121,16 +201,49 @@ section a:hover {
 
 <button class="toggle" onclick="toggleMode()">Light / Dark</button>
 
+
 <section>
+
 <h1>Sungsoo Kim</h1>
 <p>Department of Physics & Astronomy, Seoul National University</p>
 <p></p>sooo4017@snu.ac.kr</p>
 <a class="cv-btn" href="CV_Sungsoo_Kim.pdf" target="_blank">📄 Download CV (PDF)</a>
+
+<p>
+Department of Physics & Astronomy<br>
+Seoul National University
+</p>
+
+<p>
+Email:
+<a href="mailto:sooo4017@snu.ac.kr">sooo4017@snu.ac.kr</a>
+</p>
+
+<a class="cv-btn" href="CV_Sungsoo_Kim.pdf" target="_blank">
+Download CV
+</a>
+
+<a class="cv-btn" href="https://scholar.google.com/citations?hl=en&user=qQhCxrcAAAAJ" target="_blank">
+Google Scholar
+</a>
+
+<a class="cv-btn" href="https://inspirehep.net/authors/2875140?ui-citation-summary=true" target="_blank">
+INSPIRE
+</a>
+
 </section>
 
 <section>
+
 <h2>Research Interests</h2>
 <p><strong>Theoretical physics, particularly scattering amplitudes and particle physics.</strong></p>
+
+<p>
+Theoretical physics, particularly
+<strong>scattering amplitudes, classical and quantum field theory,
+and gravitational two-body dynamics.</strong>
+</p>
+
 </section>
 
 
@@ -157,48 +270,207 @@ section a:hover {
   </p>
 
   <p>* Equal contribution</p>
+
+<h2>Publications</h2>
+
+<div class="pub">
+
+<strong>
+<a href="https://doi.org/10.1007/JHEP11(2025)032" target="_blank">
+Classical Eikonal in Relativistic Scattering
+</a>
+</strong>
+
+<br>
+
+S. S. Kim*, H. J. Lee*, S. M. Lee*
+
+<br>
+
+<em>JHEP 11 (2025) 032</em>
+
+</div>
+
+
+
+<div class="pub">
+
+<strong>
+<a href="https://doi.org/10.1007/JHEP01(2025)111" target="_blank">
+Classical Eikonal from Magnus Expansion
+</a>
+</strong>
+
+<br>
+
+J. H. Kim*, J. W. Kim*, S. S. Kim*, S. M. Lee*
+
+<br>
+
+<em>JHEP 01 (2025) 111</em>
+
+</div>
+
+
+<p>* Equal contribution</p>
+
 </section>
+
+
 
 
 <section>
 <h2>Research Experience</h2>
 
+<h2>Completed Projects</h2>
+
+
+  
 <div class="card">
 <h3>CERN Summer Student Programme 2023</h3>
+
+<h3>Classical Eikonal in Relativistic Scattering</h3>
+
+<p><em>2024 – 2025</em></p>
+
 <ul>
 <li>Experimental analysis at LHCb</li>
 <li>Selected as Korean national representative</li>
+
+<li>Established correspondence between the Magnus expansion and worldline QFT.</li>
+
+<li>Clarified causal structures in relativistic scattering.</li>
+
 </ul>
+
 </div>
+
+
+
+<div class="card">
+
+<h3>CERN Summer Student Programme</h3>
+
+<p><em>Summer 2023</em></p>
+
+<ul>
+
+<li>Experimental research within the LHCb collaboration.</li>
+
+<li>Feasibility study of detecting 
+\(D_s^{+} \rightarrow \tau^{+}\nu_\tau\).</li>
+
+<li>Selected as one of two representatives from Korea.</li>
+
+</ul>
+
+</div>
+
+
 </section>
+
+
+
+
+<section>
+
+<h2>Education</h2>
+
+<p>
+
+<strong>Seoul National University</strong><br>
+
+B.S. in Physics (Valedictorian)<br>
+
+2019 – 2026
+
+</p>
+
+<p>
+
+Daejeon Science High School for the Gifted<br>
+
+2016 – 2019
+
+</p>
+
+</section>
+
+
 
 <section>
 <h2>Scholarships & Awards</h2>
+
+<h2>Awards</h2>
+
 <ul>
 <li>Presidential Science Scholarship (2021)</li>
+
+<li>Presidential Science Scholarship (2021–Present)</li>
+
+<li>Merit Scholarship, Seoul National University</li>
+
 </ul>
+
 </section>
 
+
+
+
 <section>
+
 <h2>Skills</h2>
 <p>Mathematica · LaTeX · Python · MATLAB</p>
+
+<p>
+
+Mathematica · LaTeX · Python · MATLAB
+
+</p>
+
 </section>
+
+
 
 
 <footer>
+
 © 2026 Sungsoo Kim
+
 </footer>
+
+
 
 <script>
 function toggleMode() {
   document.body.classList.toggle("light");
   localStorage.setItem("mode",
     document.body.classList.contains("light") ? "light" : "dark");
+
+function toggleMode(){
+
+document.body.classList.toggle("light")
+
+localStorage.setItem(
+
+"mode",
+
+document.body.classList.contains("light")?"light":"dark"
+
+)
+
 }
 if (localStorage.getItem("mode") === "light") {
   document.body.classList.add("light");
+
+if(localStorage.getItem("mode")==="light"){
+
+document.body.classList.add("light")
+
 }
+
 </script>
+
 
 </body>
 </html>
